@@ -11,7 +11,7 @@ const App = () => {
     const [contacts, setContacts] = useState(
         () => JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)) ?? []
     );
-    const [filter, setFilter] = useState('');
+    const [filter, setFilter] = useState(() => '');
 
     useEffect(() => {
         const savedState = localStorage.getItem(LOCALSTORAGE_KEY); 
