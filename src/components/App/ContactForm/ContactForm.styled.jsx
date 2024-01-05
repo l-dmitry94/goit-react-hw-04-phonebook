@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import { ErrorMessage, Field, Form } from "formik";
 
-export const FormStyle = styled(Form)`
+export const FormStyle = styled.form`
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -10,7 +9,7 @@ export const FormStyle = styled(Form)`
     padding: 20px;
 `
 
-export const FormInputStyle = styled(Field)`
+export const FormInputStyle = styled.input`
     height: 42px;
     font-size: 16px;
     outline: none;
@@ -55,7 +54,7 @@ export const FormButton = styled.button`
     transition: border-color .3s linear;
 `
 
-export const StyledErrorMessage = styled(ErrorMessage)`
+export const StyledErrorMessage = styled.p`
   color: red;
   font-size: 14px;
   margin-top: 4px;
